@@ -1,5 +1,5 @@
 local dragondef = {
-   type = "npc",
+   type = "monster",
    passive = false,
    rotate = 180,
    attacks_monsters = true,
@@ -39,7 +39,7 @@ local dragondef = {
    drops = {
       {name = "default:mese_crystal", chance = 2, min = 2, max = 2},
    },
-   fall_speed = 2,
+   fall_speed = -2,
    stepheight = 10,
    water_damage = 2,
    lava_damage = 0,
