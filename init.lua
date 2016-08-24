@@ -35,7 +35,7 @@ local dragondef = {
    walk_velocity = 3,
    run_velocity = 5,
    jump = true,
-   fly = true,
+   fly = false,
    drops = {
       {name = "default:mese_crystal", chance = 1, min = 2, max = 2},
       {name = "default:mese_crystal", chance = 4, min = 2, max = 4},
@@ -69,7 +69,7 @@ end
 
 mobs:register_mob("f46_dragon:dragon", dragondef)
 
-mobs:spawn_specific("f46_dragon:dragon", {"air"}, {"default:lava_source"}, 20, 0, 300, 500, 2, -31000, 31000)
+mobs:spawn_specific("f46_dragon:dragon", {"obsidian"}, {"default:lava_source","ethereal:fiery_dirt"}, 20, 0, 300, 1000, 2, -31000, 31000)
    
 mobs:register_egg("f46_dragon:dragon", "Farfadet Dragon", "default_apple.png", 1)
 
