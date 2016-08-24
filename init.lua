@@ -58,6 +58,7 @@ local dragondef = {
       run_end = 200,
       punch_start = 140,
       punch_end = 170,
+      punch_speed = 20,
    },
 	knock_back = 2,
 }
